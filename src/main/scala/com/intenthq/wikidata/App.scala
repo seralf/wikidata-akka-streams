@@ -62,7 +62,7 @@ object App {
         case Success((t, f)) => printResults(t, f)
         case Failure(tr) => println("Something went wrong")
       }
-      system.shutdown()
+      system.terminate()
     }
     0
   }
